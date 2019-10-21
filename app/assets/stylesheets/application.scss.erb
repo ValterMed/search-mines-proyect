@@ -1,0 +1,58 @@
+.header {
+  background-image: url('<%= asset_path 'background.jpg' %>');
+  background-size: cover;
+  border-radius: 10px;
+  height: 200px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .title {
+    background-image: url('<%= asset_path 'mines.png' %>');
+    background-size: cover;
+    width: 800px;
+    height: 150px;
+  }
+}
+
+@mixin button-position($left, $top) {
+  position: absolute;
+  left: $left;
+  top: $top;
+}
+
+.restart-button {
+  @include button-position(60px, 240px);
+}
+
+.game-background {
+  background-image: url('<%= asset_path 'bombs.jpeg' %>');
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .help-container {
+    margin-top: 50px;
+  }
+  .game-board-container {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 310px;
+    margin-right: 310px;
+    .cell {
+      background-color: #7f7e7e;
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      img {
+        width: 45px;
+        height: 45px;
+        margin-left: 3px;
+      }
+    }
+    .cell:hover {
+      background-color: #c2bcbc;
+    }
+  }
+}

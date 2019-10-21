@@ -1,0 +1,26 @@
+{
+  "name": "SEARCH-MINES",
+  "private": true,
+  "dependencies": {
+    "@babel/preset-react": "^7.6.3",
+    "@rails/webpacker": "^4.0.7",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-polyfill": "^6.26.0",
+    "install": "^0.13.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-redux": "^7.1.1",
+    "react-router": "^5.1.0",
+    "react-router-dom": "^5.1.0",
+    "react_ujs": "^2.6.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "styled-components": "^4.4.0",
+    "yarn": "^1.19.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.8.2"
+  }
+}
